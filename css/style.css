@@ -1,0 +1,503 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  color: #fff;
+}
+
+h2{
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#fff;
+}
+img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.fa{
+  color:#000;
+
+}
+/* Header ------------*/
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#000;
+  padding: 10px 0;
+
+}
+
+
+.logo{
+
+  flex: 1;
+  margin-left: 10px;
+}
+.logo h1{
+  text-transform: uppercase;
+}
+nav{
+  
+  flex: 2;
+  
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+.bars{
+ 
+  display: none;
+}
+
+
+
+/* Showcase ----------------*/
+
+.showcase{
+  background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.4)),url(../images/cover-1.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.showcase .sh-title{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+ 
+}
+  
+.title_h2 h2{
+  font-size: 4rem;
+  color: #fff;
+  text-transform: uppercase;
+  
+}
+
+.title_p {
+  line-height: 1.6;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.btn{
+  margin-top: 30px;
+margin-right:100px;
+
+text-align: center;
+ 
+}
+
+.btn a{
+  width: 150px;
+  background: #000;
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn a:hover{
+  background: #fff;
+  color: #000;
+}
+
+/* Services ---------------*/
+
+.services{
+  text-align: center;
+  
+}
+.ser-box{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  width:80%;
+  margin:auto;
+}
+
+/* Testimonial --------------*/
+
+.testimonials{
+  text-align: center;
+}
+
+.test-box{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  column-gap:10px;
+  width:90%;
+  margin:auto;
+}
+
+.test-box .fa{
+  color:#ffb920;
+}
+
+/* Contact -----------*/
+.contact{
+  text-align: center;
+}
+
+contact-container{
+  display:grid;
+  grid-template-columns:45% 45%;
+  margin-bottom:40px;
+}
+
+.cont-media ul{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  column-gap:5px;
+}
+.cont-media .fa{
+  width:50px;
+  background:#000;
+  color:#fff;
+  padding:10px;
+  margin:5px 0;
+}
+
+footer{
+  text-align:center;
+  background:#000;
+  padding:15px 0;
+  color:#fff;
+  text-transform: capitalize;
+}
+.cont-email .name,
+    .cont-email .email{
+      margin:10px 0;
+    }
+
+
+
+/*===========================================MEDIA QUERY=====================================================*/
+
+/* Media Device 1201px and 1400px -------------------------------------------------*/
+
+@media (min-width:1201px) and (max-width:1400px){
+  header{
+    display:flex;
+    justify-content:space-around;
+    padding:15px 30px;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  }
+  .ser-box{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    width:90%;
+    margin:auto;
+  }
+
+  .test-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:10px;
+    width:90%;
+    margin:auto;
+  }
+
+  .test-box .fa{
+    color:#ffb920;
+  }
+
+  .contact-container{
+    display:grid;
+    grid-template-columns:45% 45%;
+    margin-bottom:40px;
+  }
+
+  .cont-media ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:5px;
+  }
+  .cont-media .fa{
+    width:50px;
+    background:#000;
+    color:#fff;
+    padding:10px;
+    margin:5px 0;
+  }
+
+  footer{
+    text-align:center;
+    background:#000;
+    padding:15px 0;
+    color:#fff;
+    text-transform: capitalize;
+  }
+}
+/* Media Device 993px and 1200px -------------------------------------------------*/
+
+@media (min-width:993px) and (max-width:1200px){
+
+  header{
+    display:flex;
+    justify-content:space-around;
+    padding:15px 30px;
+    background-image:linear-gradient(45deg,rgba(126, 87, 87, 0.8),rgba(228, 222, 222, 0.2));
+  }
+  .ser-box{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    width:80%;
+    margin:auto;
+  }
+
+  .test-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:10px;
+    width:80%;
+    margin:auto;
+  }
+
+  .test-box .fa{
+    color:#ffb920;
+  }
+
+  .contact-container{
+    display:grid;
+    grid-template-columns:45% 45%;
+    margin-bottom:40px;
+  }
+
+  .cont-media ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:5px;
+  }
+  .cont-media .fa{
+    width:50px;
+    background:#000;
+    color:#fff;
+    padding:10px;
+    margin:5px 0;
+  }
+
+  footer{
+    text-align:center;
+    background:#000;
+    padding:15px 0;
+    color:#fff;
+    text-transform: capitalize;
+  }
+}
+
+/* Media Device 769px and 992px -------------------------------------------------*/
+
+@media (min-width:769px) and (max-width:992px){
+  header{
+    display:flex;
+    justify-content:space-around;
+    padding:15px 30px;
+    background-image:linear-gradient(45deg,rgba(0,0,0,.8),rgba(0,0,0,.2));
+  }
+  .ser-box{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    width:80%;
+    margin:auto;
+  }
+
+  .test-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:10px;
+    width:80%;
+    margin:auto;
+  }
+
+  .test-box .fa{
+    color:#ffb920;
+  }
+
+  .contact-container{
+    display:grid;
+    grid-template-columns:45% 45%;
+    margin-bottom:40px;
+  }
+
+  .cont-media ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:5px;
+  }
+  .cont-media .fa{
+    width:50px;
+    background:#000;
+    color:#fff;
+    padding:10px;
+    margin:5px 0;
+  }
+
+  footer{
+    text-align:center;
+    background:#000;
+    padding:15px 0;
+    color:#fff;
+    text-transform: capitalize;
+  }
+}
+
+
+/* Media Device 576px and 768px ----------------------------------------------------*/
+
+@media (min-width:577px) and (max-width:768px){
+  header{
+    display:flex;
+    justify-content:space-around;
+    padding:15px 30px;
+    background-image:linear-gradient(45deg,rgba(0,0,0,.8),rgba(0,0,0,.2));
+  }
+  .ser-box{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    width:80%;
+    margin:auto;
+  }
+
+  .test-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:10px;
+    width:80%;
+    margin:auto;
+  }
+
+  .test-box .fa{
+    color:#ffb920;
+  }
+
+  .contact-container{
+    display:grid;
+    grid-template-columns:45% 45%;
+    margin-bottom:40px;
+  }
+
+  .cont-media ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:5px;
+  }
+  .cont-media .fa{
+    width:50px;
+    background:#000;
+    color:#fff;
+    padding:10px;
+    margin:5px 0;
+  }
+
+  footer{
+    text-align:center;
+    background:#000;
+    padding:15px 0;
+    color:#fff;
+    text-transform: capitalize;
+  }
+
+}
+
+/* Media Device 576px -------------------------------------------------------------*/
+
+@media (max-width:576px){
+    header{
+      display:flex;
+      justify-content:space-around;
+      padding:15px 30px;
+      background:#000;
+    }
+    nav ul{
+      display: none;
+    }
+    header .bars{
+      display: block;
+    }
+    header .bars .fa{
+      color:#fff;
+    }
+    .ser-box{
+      width:80%;
+      margin:auto;
+    }
+
+    .test-box{
+      width:80%;
+      margin:auto;
+    }
+    
+    .test-star .fa{
+      color:#ffb920;
+    }
+    .cont-media ul{
+      /* display:grid;
+      grid-template-columns:repeat(4,1fr); */
+      display:flex;
+      justify-content:center;
+      column-gap:10px;
+    }
+    .cont-media .fa{
+      width:50px;
+      background:#000;
+      color:#fff;
+      padding:10px;
+      margin:5px 0;
+    }
+    .cont-email .name,
+    .cont-email .email{
+      margin:10px 0;
+    }
+
+    footer{
+      text-align:center;
+      background:#000;
+      padding:15px 0;
+      color:#fff;
+      text-transform: capitalize;
+    }
+}

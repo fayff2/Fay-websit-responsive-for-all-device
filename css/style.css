@@ -144,6 +144,11 @@ text-align: center;
   width:80%;
   margin:auto;
 }
+.ser-box img{
+ 
+  border-radius:13px;
+  box-shadow: 5px 0px 5px gray;
+}
 
 /* Testimonial --------------*/
 
@@ -162,6 +167,11 @@ text-align: center;
 
 .test-box .fa{
   color:#ffb920;
+}
+
+.test-img{
+  border-radius:50%;
+  box-shadow: 5px 0px 5px gray;
 }
 
 /* Contact -----------*/
